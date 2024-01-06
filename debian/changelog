@@ -1,5 +1,54 @@
-template-repository (1.0-1) unstable; urgency=medium
+jquery-ui-themes (1.12.1+dfsg-1.1) unstable; urgency=medium
+
+  * Non maintainer upload by the Reproducible Builds team.
+  * No source change upload to rebuild on buildd with .buildinfo files.
+
+ -- Holger Levsen <holger@debian.org>  Mon, 13 Jun 2022 16:10:21 +0200
+
+jquery-ui-themes (1.12.1+dfsg-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Remove most redundant stuff from orig tarball.
+  * Add myself to Uploaders.
+
+ -- Ximin Luo <infinity0@debian.org>  Mon, 28 Nov 2016 03:15:58 +0100
+
+jquery-ui-themes (1.8.24+dfsg-1) unstable; urgency=low
+
+  * New Upstream Release
+
+ -- Marcelo Jorge Vieira (metal) <metal@debian.org>  Tue, 19 Feb 2013 23:56:39 -0300
+
+jquery-ui-themes (1.8.23+dfsg-1) experimental; urgency=low
+
+  * New Upstream Release
+
+ -- Marcelo Jorge Vieira (metal) <metal@debian.org>  Wed, 22 Aug 2012 17:33:15 -0300
+
+jquery-ui-themes (1.8.21+dfsg-1) unstable; urgency=low
+
+  * New Upstream Release
+
+ -- Marcelo Jorge Vieira (metal) <metal@debian.org>  Tue, 12 Jun 2012 17:00:16 -0300
+
+jquery-ui-themes (1.8.20+dfsg-1) unstable; urgency=low
+
+  * New Upstream Release
+    + Replaced 'version.txt' with 'package.json
+  * Updated Standards-Version to 3.9.3
+    + Machine-readable debian/copyright version 1.0
+  * Improving some package descriptions
+
+ -- Marcelo Jorge Vieira (metal) <metal@debian.org>  Sun, 06 May 2012 17:06:14 -0300
+
+jquery-ui-themes (1.8.18+dfsg-1) unstable; urgency=low
+
+  * New Upstream Release
+
+ -- Marcelo Jorge Vieira (metal) <metal@debian.org>  Wed, 29 Feb 2012 20:08:39 -0300
+
+jquery-ui-themes (1.8.17+dfsg-1) unstable; urgency=low
 
   * Initial release
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Marcelo Jorge Vieira (metal) <metal@debian.org>  Mon, 23 Jan 2012 02:07:45 -0200

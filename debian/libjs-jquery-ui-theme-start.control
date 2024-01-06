@@ -1,0 +1,8 @@
+
+Package: libjs-jquery-ui-theme-start
+Architecture: all
+Depends: ${misc:Depends}
+Suggests: libjs-jquery-ui (>= 1.8)
+Recommends: javascript-common
+Description: Start theme for jQuery UI
+ This package contains CSS styles and image files

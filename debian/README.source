@@ -1,0 +1,8 @@
+Explain why dfsg-packaging
+--------------------------
+
+jquery-ui-themes originally comes with minified files. However, it violates
+the Debian Policy. See the 'get-orig-source' rule in debian/rules for the
+files removed from upstream tarball.
+
+ -- Marcelo Jorge Vieira <metal@debian.org>  Tue, 24 Jan 2012 15:10:26 -0200

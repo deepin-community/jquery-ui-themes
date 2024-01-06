@@ -1,0 +1,10 @@
+Source: jquery-ui-themes
+Section: web
+Priority: optional
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Marcelo Jorge Vieira (metal) <metal@debian.org>, Ximin Luo <infinity0@debian.org>
+Build-Depends: debhelper (>= 10), cleancss, m4
+Standards-Version: 3.9.8
+Homepage: http://jqueryui.com/
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-javascript/jquery-ui-themes.git
+Vcs-Git: https://anonscm.debian.org/git/pkg-javascript/jquery-ui-themes.git
