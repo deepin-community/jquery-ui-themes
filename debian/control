@@ -1,15 +1,210 @@
-Source: template-repository
-Section: unknown
+Source: jquery-ui-themes
+Section: web
 Priority: optional
-Maintainer: Tsic404 <liuheng@deepin.org>
-Build-Depends: debhelper (>= 11)
-Standards-Version: 4.1.3
-Homepage: https://github.com/deepin-community/template-repository
-#Vcs-Browser: https://salsa.debian.org/debian/deepin-community-template-repository
-#Vcs-Git: https://salsa.debian.org/debian/deepin-community-template-repository.git
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Marcelo Jorge Vieira (metal) <metal@debian.org>, Ximin Luo <infinity0@debian.org>
+Build-Depends: debhelper (>= 10), cleancss, m4
+Standards-Version: 3.9.8
+Homepage: http://jqueryui.com/
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-javascript/jquery-ui-themes.git
+Vcs-Git: https://anonscm.debian.org/git/pkg-javascript/jquery-ui-themes.git
 
-Package: template-repository
-Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Package: libjs-jquery-ui-theme-base
+Architecture: all
+Depends: ${misc:Depends}
+Suggests: libjs-jquery-ui (>= 1.8)
+Recommends: javascript-common
+Description: Base theme for jQuery UI
+ This package contains CSS styles and image files
+
+Package: libjs-jquery-ui-theme-black-tie
+Architecture: all
+Depends: ${misc:Depends}
+Suggests: libjs-jquery-ui (>= 1.8)
+Recommends: javascript-common
+Description: Black Tie theme for jQuery UI
+ This package contains CSS styles and image files
+
+Package: libjs-jquery-ui-theme-blitzer
+Architecture: all
+Depends: ${misc:Depends}
+Suggests: libjs-jquery-ui (>= 1.8)
+Recommends: javascript-common
+Description: Blitzer theme for jQuery UI
+ This package contains CSS styles and image files
+
+Package: libjs-jquery-ui-theme-cupertino
+Architecture: all
+Depends: ${misc:Depends}
+Suggests: libjs-jquery-ui (>= 1.8)
+Recommends: javascript-common
+Description: Cupertino theme for jQuery UI
+ This package contains CSS styles and image files
+
+Package: libjs-jquery-ui-theme-dark-hive
+Architecture: all
+Depends: ${misc:Depends}
+Suggests: libjs-jquery-ui (>= 1.8)
+Recommends: javascript-common
+Description: Dark Hive theme for jQuery UI
+ This package contains CSS styles and image files
+
+Package: libjs-jquery-ui-theme-dot-luv
+Architecture: all
+Depends: ${misc:Depends}
+Suggests: libjs-jquery-ui (>= 1.8)
+Recommends: javascript-common
+Description: Dot Luv theme for jQuery UI
+ This package contains CSS styles and image files
+
+Package: libjs-jquery-ui-theme-eggplant
+Architecture: all
+Depends: ${misc:Depends}
+Suggests: libjs-jquery-ui (>= 1.8)
+Recommends: javascript-common
+Description: Eggplant theme for jQuery UI
+ This package contains CSS styles and image files
+
+Package: libjs-jquery-ui-theme-excite-bike
+Architecture: all
+Depends: ${misc:Depends}
+Suggests: libjs-jquery-ui (>= 1.8)
+Recommends: javascript-common
+Description: Excite Bike theme for jQuery UI
+ This package contains CSS styles and image files
+
+Package: libjs-jquery-ui-theme-flick
+Architecture: all
+Depends: ${misc:Depends}
+Suggests: libjs-jquery-ui (>= 1.8)
+Recommends: javascript-common
+Description: Flick theme for jQuery UI
+ This package contains CSS styles and image files
+
+Package: libjs-jquery-ui-theme-hot-sneaks
+Architecture: all
+Depends: ${misc:Depends}
+Suggests: libjs-jquery-ui (>= 1.8)
+Recommends: javascript-common
+Description: Hot Sneaks theme for jQuery UI
+ This package contains CSS styles and image files
+
+Package: libjs-jquery-ui-theme-humanity
+Architecture: all
+Depends: ${misc:Depends}
+Suggests: libjs-jquery-ui (>= 1.8)
+Recommends: javascript-common
+Description: Humanity theme for jQuery UI
+ This package contains CSS styles and image files
+
+Package: libjs-jquery-ui-theme-le-frog
+Architecture: all
+Depends: ${misc:Depends}
+Suggests: libjs-jquery-ui (>= 1.8)
+Recommends: javascript-common
+Description: Le Frog theme for jQuery UI
+ This package contains CSS styles and image files
+
+Package: libjs-jquery-ui-theme-mint-choc
+Architecture: all
+Depends: ${misc:Depends}
+Suggests: libjs-jquery-ui (>= 1.8)
+Recommends: javascript-common
+Description: Mint Choc theme for jQuery UI
+ This package contains CSS styles and image files
+
+Package: libjs-jquery-ui-theme-overcast
+Architecture: all
+Depends: ${misc:Depends}
+Suggests: libjs-jquery-ui (>= 1.8)
+Recommends: javascript-common
+Description: Overcast theme for jQuery UI
+ This package contains CSS styles and image files
+
+Package: libjs-jquery-ui-theme-pepper-grinder
+Architecture: all
+Depends: ${misc:Depends}
+Suggests: libjs-jquery-ui (>= 1.8)
+Recommends: javascript-common
+Description: Pepper Grinder theme for jQuery UI
+ This package contains CSS styles and image files
+
+Package: libjs-jquery-ui-theme-redmond
+Architecture: all
+Depends: ${misc:Depends}
+Suggests: libjs-jquery-ui (>= 1.8)
+Recommends: javascript-common
+Description: Redmond theme for jQuery UI
+ This package contains CSS styles and image files
+
+Package: libjs-jquery-ui-theme-smoothness
+Architecture: all
+Depends: ${misc:Depends}
+Suggests: libjs-jquery-ui (>= 1.8)
+Recommends: javascript-common
+Description: Smoothness theme for jQuery UI
+ This package contains CSS styles and image files
+
+Package: libjs-jquery-ui-theme-south-street
+Architecture: all
+Depends: ${misc:Depends}
+Suggests: libjs-jquery-ui (>= 1.8)
+Recommends: javascript-common
+Description: South Street theme for jQuery UI
+ This package contains CSS styles and image files
+
+Package: libjs-jquery-ui-theme-start
+Architecture: all
+Depends: ${misc:Depends}
+Suggests: libjs-jquery-ui (>= 1.8)
+Recommends: javascript-common
+Description: Start theme for jQuery UI
+ This package contains CSS styles and image files
+
+Package: libjs-jquery-ui-theme-sunny
+Architecture: all
+Depends: ${misc:Depends}
+Suggests: libjs-jquery-ui (>= 1.8)
+Recommends: javascript-common
+Description: Sunny theme for jQuery UI
+ This package contains CSS styles and image files
+
+Package: libjs-jquery-ui-theme-swanky-purse
+Architecture: all
+Depends: ${misc:Depends}
+Suggests: libjs-jquery-ui (>= 1.8)
+Recommends: javascript-common
+Description: Swanky Purse theme for jQuery UI
+ This package contains CSS styles and image files
+
+Package: libjs-jquery-ui-theme-trontastic
+Architecture: all
+Depends: ${misc:Depends}
+Suggests: libjs-jquery-ui (>= 1.8)
+Recommends: javascript-common
+Description: Trontastic theme for jQuery UI
+ This package contains CSS styles and image files
+
+Package: libjs-jquery-ui-theme-ui-darkness
+Architecture: all
+Depends: ${misc:Depends}
+Suggests: libjs-jquery-ui (>= 1.8)
+Recommends: javascript-common
+Description: UI Darkness theme for jQuery UI
+ This package contains CSS styles and image files
+
+Package: libjs-jquery-ui-theme-ui-lightness
+Architecture: all
+Depends: ${misc:Depends}
+Suggests: libjs-jquery-ui (>= 1.8)
+Recommends: javascript-common
+Description: UI Lightness theme for jQuery UI
+ This package contains CSS styles and image files
+
+Package: libjs-jquery-ui-theme-vader
+Architecture: all
+Depends: ${misc:Depends}
+Suggests: libjs-jquery-ui (>= 1.8)
+Recommends: javascript-common
+Description: Vader theme for jQuery UI
+ This package contains CSS styles and image files

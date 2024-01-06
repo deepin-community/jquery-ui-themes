@@ -2,3 +2,37 @@
 
 %:
 	dh $@
+
+binary binary-arch binary-indep build build-arch build-indep clean install install-arch install-indep: debian/control
+
+THEMES = $(sort $(patsubst themes/%,%,$(wildcard themes/*)))
+
+THEMES_CONTROL = $(THEMES:%=debian/libjs-jquery-ui-theme-%.control)
+THEMES_INSTALL = $(THEMES:%=debian/libjs-jquery-ui-theme-%.install)
+THEMES_README = $(THEMES:%=debian/libjs-jquery-ui-theme-%.README.Debian)
+
+THEMES_FULL = $(THEMES:%=themes/%/jquery-ui.css)
+THEMES_FULL_MIN = $(THEMES_FULL:%.css=%.min.css)
+
+%.min.css: %.css
+	cleancss "$<" -o "$@"
+
+themes/%/jquery-ui.css: jquery-ui.structure.css themes/%/theme.css
+	cat $^ > "$@"
+
+debian/libjs-jquery-ui-theme-%.control: debian/libjs-jquery-ui-theme-THEME.control.in
+	m4 -DTHEME=$* -DTHEME_NAME="$$(echo $* | tr - ' ' | sed -e 's/[^ ]\+/\L\u&/g' -e 's/Ui/UI/g')" "$<" > "$@"
+
+debian/libjs-jquery-ui-theme-%.install: debian/libjs-jquery-ui-theme-THEME.install.in
+	m4 -DTHEME=$* "$<" > "$@"
+
+debian/libjs-jquery-ui-theme-%.README.Debian: debian/libjs-jquery-ui-theme-THEME.README.Debian.in
+	m4 -DTHEME=$* "$<" > "$@"
+
+debian/control: debian/control.in $(THEMES_CONTROL)
+	cat $^ > "$@"
+
+override_dh_auto_build: $(THEMES_INSTALL) $(THEMES_README) $(THEMES_FULL) $(THEMES_FULL_MIN)
+
+override_dh_auto_clean:
+	rm -f $(THEMES_INSTALL) $(THEMES_README) $(THEMES_FULL) $(THEMES_FULL_MIN)

@@ -1,0 +1,8 @@
+
+Package: libjs-jquery-ui-theme-humanity
+Architecture: all
+Depends: ${misc:Depends}
+Suggests: libjs-jquery-ui (>= 1.8)
+Recommends: javascript-common
+Description: Humanity theme for jQuery UI
+ This package contains CSS styles and image files
